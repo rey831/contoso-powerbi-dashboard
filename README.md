@@ -16,12 +16,7 @@ The case study is based on **Contoso**, a fictional multinational company used w
 
 ## 🎓 Thesis Info
 
-- **Title:** Optimizing Sales Management with Power BI  
-- **Author:** Reynard Wijaya  
-- **University:** Technische Hochschule Köln  
-- **Program:** Wirtschaftsinformatik (Business Informatics)  
-- **Supervisor:** Prof. Dr. Stefan Eckstein  
-- **Date Submitted:** 11.11.2024
+- **Title:** Optimizing Sales Management with Power BI 
 
 ## 📸 Dashboards Preview
 
@@ -58,7 +53,10 @@ The case study is based on **Contoso**, a fictional multinational company used w
 For full methodology, SQL queries, design principles, and insights, see the (./Documentation/Thesis%20-%20Reynard%20Wijaya.pdf).
 
 
-## pbix
+## pbix data
+
+The data is too big, so i can't upload it here. So i created a link where you guys can see my dashboard
+
 https://drive.google.com/file/d/1LoR04fD22bEFJzFXWDSQrdv93wfns2r4/view?usp=drive_link
 
 
