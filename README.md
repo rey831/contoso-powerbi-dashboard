@@ -58,6 +58,9 @@ The case study is based on **Contoso**, a fictional multinational company used w
 For full methodology, SQL queries, design principles, and insights, see the (./Documentation/Thesis%20-%20Reynard%20Wijaya.pdf).
 
 
+## pbix
+https://drive.google.com/file/d/1LoR04fD22bEFJzFXWDSQrdv93wfns2r4/view?usp=drive_link
+
 
 
 
