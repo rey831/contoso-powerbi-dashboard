@@ -74,7 +74,7 @@ The case study is based on **Contoso**, a fictional multinational company used w
 
 ## 📘 Full Thesis
 
-For full methodology, SQL queries, design principles, and insights, see here https://drive.google.com/drive/folders/1ZDP_HI2iruvwOlxtUnulYP8TrdmUPl1m?usp=sharing
+For full methodology, SQL queries, design principles, and insights, see here: https://drive.google.com/file/d/11gxRWQ6SayusTn8C_IAH9UWEF8X-QN7_/view?usp=drive_link
 
 
 
