@@ -1,0 +1,33 @@
+
+-- Net Sales
+Net Sales = SUM(FactSales[SalesAmount])
+
+-- Profit
+Profit = [Net Sales] - [COGS]
+
+-- COGS (Cost of Goods Sold)
+COGS = SUM(FactSales[TotalProductCost])
+
+-- Standard Margin
+Standard Margin = DIVIDE([Profit], [Net Sales], 0)
+
+-- Orders (Online)
+Orders (Online) = COUNTROWS(FactOnlineSales)
+
+-- Total Customers
+Total Customers = DISTINCTCOUNT(DimCustomer[CustomerKey])
+
+-- Total Online Orders
+Total Online Orders = COUNTROWS(FactOnlineSales)
+
+-- Average Orders per Customer
+Average Orders per Customer = DIVIDE([Total Online Orders], [Total Customers], 0)
+
+-- Ranking based on Volume
+Ranking Volume = RANKX(ALL(DimProduct), [Net Sales], , DESC)
+
+-- Total Customers by Occupation
+Total Customers by Occupation = CALCULATE(DISTINCTCOUNT(DimCustomer[CustomerKey]), ALLEXCEPT(DimCustomer, DimCustomer[Occupation]))
+
+-- Calendar Table (basic structure)
+Calendar = CALENDAR(DATE(2022,1,1), DATE(2024,12,31))
