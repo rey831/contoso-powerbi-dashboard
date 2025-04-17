@@ -21,10 +21,9 @@ The case study is based on **Contoso**, a fictional multinational company used w
 
 ## 📁 Project Structure
 
-- PowerBI_ Files: # https://drive.google.com/file/d/1LoR04fD22bEFJzFXWDSQrdv93wfns2r4/view?usp=drive_link
-- Data:
-       - sql_queries_contoso.sql              # https://github.com/rey831/contoso-powerbi-dashboard/blob/main/sql_queries_contoso.sql
-       - powerbi_measures_contoso.dax         # https://github.com/rey831/contoso-powerbi-dashboard/blob/main/powerbi_measures_contoso.dax
+- PowerBI_ Files                       # https://drive.google.com/file/d/1LoR04fD22bEFJzFXWDSQrdv93wfns2r4/view?usp=drive_link
+- sql_queries_contoso.sql              # https://github.com/rey831/contoso-powerbi-dashboard/blob/main/sql_queries_contoso.sql
+- powerbi_measures_contoso.dax         # https://github.com/rey831/contoso-powerbi-dashboard/blob/main/powerbi_measures_contoso.dax
 
 
 ## 📸 Dashboards Preview
