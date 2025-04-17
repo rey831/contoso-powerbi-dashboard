@@ -18,19 +18,13 @@ The case study is based on **Contoso**, a fictional multinational company used w
 
 - **Title:** Optimizing Sales Management with Power BI
 
-## 📁 Project Structure
-│
-├── 📂 PowerBI_Files/
-│   └── ContosoRetailDW_2.pbix               # https://drive.google.com/file/d/1LoR04fD22bEFJzFXWDSQrdv93wfns2r4/view?usp=drive_link
-│
-├── 📂 Data/
-│   ├── sql_queries_contoso.sql              # https://github.com/rey831/contoso-powerbi-dashboard/blob/main/sql_queries_contoso.sql
-│   └── powerbi_measures_contoso.dax         # https://github.com/rey831/contoso-powerbi-dashboard/blob/main/powerbi_measures_contoso.dax
-│
-├── 📄 README.md                              # Project overview and instructions
-├── 📄 LICENSE                                # Project license (MIT)
-└── 📄 .gitignore                             # Git ignore file (optional)
 
+## 📁 Project Structure
+
+- PowerBI_ Files: # https://drive.google.com/file/d/1LoR04fD22bEFJzFXWDSQrdv93wfns2r4/view?usp=drive_link
+- Data:
+       - sql_queries_contoso.sql              # https://github.com/rey831/contoso-powerbi-dashboard/blob/main/sql_queries_contoso.sql
+       - powerbi_measures_contoso.dax         # https://github.com/rey831/contoso-powerbi-dashboard/blob/main/powerbi_measures_contoso.dax
 
 
 ## 📸 Dashboards Preview
