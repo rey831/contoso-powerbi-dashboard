@@ -43,9 +43,10 @@ The case study is based on **Contoso**, a fictional multinational company used w
 - Interactive filters for Year, Month, and Region
 - Tooltip insights on hover
 
-- Tooltip:
+### 🌍 Tooltip - City
 ![image](https://github.com/user-attachments/assets/d7f298fc-1d73-4682-8765-87138e08f65d)
 
+- Gain a quick understanding of regional performance
 
 ### 📦 Product Statistics
 
