@@ -1,33 +1,70 @@
 
--- Net Sales
-Net Sales = SUM(FactSales[SalesAmount])
+-- Ranking based on Volume: 
+Ranking based on volume = 
+
+VAR _topprod = RANKX(
+    FILTER(ALL(DimProduct[ProductName]), NOT(ISBLANK(DimProduct[ProductName]))), 
+    [Sales Volume],
+    ,
+    DESC
+)
+
+VAR _bottomprod = RANKX(
+    FILTER(ALL(DimProduct[ProductName]), NOT(ISBLANK(DimProduct[ProductName]))), 
+    [Sales Volume],
+    ,
+    ASC
+)
+
+VAR _ranking = IF(SELECTEDVALUE(TopBottom[Value]) = "Top", _topprod, _bottomprod)
+
+RETURN
+IF(_ranking <= 'Ranking Option'[Ranking Option Value], [Sales Volume])
+
+
+-- Net Sales: 
+Net Sales = 
+SUMX(FactSales, FactSales[UnitPrice] * FactSales[SalesQuantity] - FactSales[DiscountAmount])
+
+-- Standard Margin: 
+Standard Margin = DIVIDE([Standard Margin], [Net Sales], 0)
 
 -- Profit
 Profit = [Net Sales] - [COGS]
 
--- COGS (Cost of Goods Sold)
-COGS = SUM(FactSales[TotalProductCost])
+-- COGS (Cost of Goods Sold): 
+COGS = SUMX(FactSales, FactSales[UnitCost] * FactSales[SalesQuantity])
 
--- Standard Margin
-Standard Margin = DIVIDE([Profit], [Net Sales], 0)
+-- Orders (Online): 
+orders_online_people = COUNT(FactOnlineSales[CustomerKey])
 
--- Orders (Online)
-Orders (Online) = COUNTROWS(FactOnlineSales)
+-- Total Customers:
+Total Customers = DISTINCTCOUNT(FactOnlineSales[CustomerKey])
 
--- Total Customers
-Total Customers = DISTINCTCOUNT(DimCustomer[CustomerKey])
-
--- Total Online Orders
+-- Total Online Orders: 
 Total Online Orders = COUNTROWS(FactOnlineSales)
 
--- Average Orders per Customer
-Average Orders per Customer = DIVIDE([Total Online Orders], [Total Customers], 0)
+-- Average Orders per Customer: 
+Average Orders per Customer = [Total Online Orders] / [Total Customers]
 
--- Ranking based on Volume
-Ranking Volume = RANKX(ALL(DimProduct), [Net Sales], , DESC)
+-- Total Customers by Occupation:
+Total Customers by Occupation = COUNT(FactOnlineSales[CustomerKey])
 
--- Total Customers by Occupation
-Total Customers by Occupation = CALCULATE(DISTINCTCOUNT(DimCustomer[CustomerKey]), ALLEXCEPT(DimCustomer, DimCustomer[Occupation]))
+-- Calendar Table (basic structure):
+Calendar = 
+ADDCOLUMNS ( 
+    CALENDAR ( MINX ( FactSales, FactSales[NewDate] ), MAXX ( FactSales, FactSales[NewDate] ) ),
+    "DateAsInteger", FORMAT ( [Date], "YYYYMMDD" ),
+    "Year", YEAR ( [Date] ),
+    "MonthNo", FORMAT ( [Date], "MM" ), 
+    "YearMonthNum", FORMAT ( [Date], "YYYY/MM" ), 
+    "YearMonth", FORMAT ( [Date], "YYYY/mmm" ), 
+    "Month_Short", FORMAT ( [Date], "mmm" ),
+    "MOnth_Long", FORMAT ( [Date], "mmmm" ),
+    "WeekNo", WEEKDAY ( [Date] ),
+    "Weekdays", FORMAT ( [Date], "dddd" ),
+    "WeekDayShort", FORMAT ( [Date], "ddd" ),
+    "Quartal", "Q" & FORMAT ( [Date], "Q" ),
+    "YearQuartal", FORMAT ( [Date], "YYYY" ) & "/Q" & FORMAT ( [Date], "Q" )
+)
 
--- Calendar Table (basic structure)
-Calendar = CALENDAR(DATE(2022,1,1), DATE(2024,12,31))
