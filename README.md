@@ -21,7 +21,7 @@ The case study is based on **Contoso**, a fictional multinational company used w
 ## 📁 Project Structure
 │
 ├── 📂 PowerBI_Files/
-│   └── ContosoRetailDW_1.pbix               # https://drive.google.com/file/d/1LoR04fD22bEFJzFXWDSQrdv93wfns2r4/view?usp=drive_link
+│   └── ContosoRetailDW_2.pbix               # https://drive.google.com/file/d/1LoR04fD22bEFJzFXWDSQrdv93wfns2r4/view?usp=drive_link
 │
 ├── 📂 Data/
 │   ├── sql_queries_contoso.sql              # https://github.com/rey831/contoso-powerbi-dashboard/blob/main/sql_queries_contoso.sql
@@ -37,21 +37,36 @@ The case study is based on **Contoso**, a fictional multinational company used w
 
 ### 🌍 City & Regional Sales
 
+![image](https://github.com/user-attachments/assets/ee296a21-300f-4618-ab19-bdd2ba30d330)
+
 - Analyze performance across cities like Berlin, Beijing, etc.
 - Interactive filters for Year, Month, and Region
 - Tooltip insights on hover
 
+- Tooltip:
+![image](https://github.com/user-attachments/assets/d7f298fc-1d73-4682-8765-87138e08f65d)
+
+
 ### 📦 Product Statistics
+
+![image](https://github.com/user-attachments/assets/6cf8dfce-bb1c-4eb8-a78b-935583a77f3a)
+
 
 - Top 5 & Bottom 5 products by performance
 - Channel-specific breakdown (Online vs In-Store)
 
 ### 💸 Sales Overview
 
+![image](https://github.com/user-attachments/assets/a99866a0-a518-4531-bf27-2a037683a553)
+
+
 - Compare revenue, margin, and profit over time
 - Region & category filters with clean design layout
 
 ### 🧑‍💼 Customer Insights
+
+![image](https://github.com/user-attachments/assets/c83b7150-207a-4fd9-8cd8-2cc7ae0787c7)
+
 
 - Segmentation by age, gender, and occupation
 - Key metrics like average orders/customer
