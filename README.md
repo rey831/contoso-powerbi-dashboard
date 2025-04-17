@@ -16,7 +16,22 @@ The case study is based on **Contoso**, a fictional multinational company used w
 
 ## 🎓 Thesis Info
 
-- **Title:** Optimizing Sales Management with Power BI 
+- **Title:** Optimizing Sales Management with Power BI
+
+## 📁 Project Structure
+│
+├── 📂 PowerBI_Files/
+│   └── ContosoRetailDW_1.pbix               # https://drive.google.com/file/d/1LoR04fD22bEFJzFXWDSQrdv93wfns2r4/view?usp=drive_link
+│
+├── 📂 Data/
+│   ├── sql_queries_contoso.sql              # https://github.com/rey831/contoso-powerbi-dashboard/blob/main/sql_queries_contoso.sql
+│   └── powerbi_measures_contoso.dax         # https://github.com/rey831/contoso-powerbi-dashboard/blob/main/powerbi_measures_contoso.dax
+│
+├── 📄 README.md                              # Project overview and instructions
+├── 📄 LICENSE                                # Project license (MIT)
+└── 📄 .gitignore                             # Git ignore file (optional)
+
+
 
 ## 📸 Dashboards Preview
 
@@ -50,14 +65,8 @@ The case study is based on **Contoso**, a fictional multinational company used w
 
 ## 📘 Full Thesis
 
-For full methodology, SQL queries, design principles, and insights, see the (./Documentation/Thesis%20-%20Reynard%20Wijaya.pdf).
+For full methodology, SQL queries, design principles, and insights, see here https://drive.google.com/drive/folders/1ZDP_HI2iruvwOlxtUnulYP8TrdmUPl1m?usp=sharing
 
-
-## pbix data
-
-The data is too big, so i can't upload it here. So i created a link where you guys can see my dashboard
-
-https://drive.google.com/file/d/1LoR04fD22bEFJzFXWDSQrdv93wfns2r4/view?usp=drive_link
 
 
 
